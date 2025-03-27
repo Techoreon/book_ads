@@ -12,9 +12,9 @@
       margin: 20px auto;
     }
 
+    /* Force each ad container to have the same fixed width */
     .book-ad-container {
-      flex: 1 1 150px;
-      max-width: 250px;
+      width: 250px;
       font-family: Arial, sans-serif;
       text-align: center;
     }
@@ -27,10 +27,10 @@
       margin-bottom: 5px;
     }
 
-    /* Image container forces a fixed height and maintains consistent dimensions */
+    /* Fixed dimensions for image container */
     .img-container {
-      width: 100%;
-      height: 385px; /* Fixed height for both ads */
+      width: 250px;
+      height: 385px;
       overflow: hidden;
       border-radius: 8px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -39,7 +39,7 @@
     .img-container img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Fill the container uniformly (cropping if needed) */
+      object-fit: cover; /* Ensures the image fills the container (cropping if needed) */
       transition: transform 0.3s ease-in-out;
     }
 
